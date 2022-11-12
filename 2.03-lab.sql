@@ -8,7 +8,7 @@ SELECT COUNT(DISTINCT language_id) FROM film;
 SELECT COUNT(film_id) FROM film WHERE rating = 'PG-13';
 
 -- 4. Get 10 the longest movies from 2006.
--- SELECT * FROM film WHERE release_year = 2006 ORDER BY length DESC LIMIT 10;
+SELECT * FROM film WHERE release_year = 2006 ORDER BY length DESC LIMIT 10;
 
 -- 5. How many days has been the company operating (check DATEDIFF() function)?  
 SELECT  DATEDIFF(MAX(rental_date), MIN(rental_date)) AS 'Operating days' FROM rental;
